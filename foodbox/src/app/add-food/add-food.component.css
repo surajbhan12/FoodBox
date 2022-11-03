@@ -1,0 +1,82 @@
+body{
+    background-image: url(https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1648219378~exp=1648219978~hmac=47197c01eca389bfd4e4c0136f091c3f021ea83f9a8bc18332a3464abe27ad24&w=1380);
+    margin-top:40px ;
+    background-size: cover;
+  }
+  
+  input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  }
+  input[type=number], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+  
+  label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 250px;
+  margin-top: 20px;
+  }
+  
+  input[type=submit]:hover {
+  background-color:white;
+  }
+  
+  .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  }
+  
+  .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  margin-left: 50px;
+  }
+  
+  .col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  }
+  .row{
+    margin: 20px;
+  }
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+  
+  form{
+    background-size: 118%;
+    width: 50%;
+    margin-left: 350px;
+    border-radius: 10px;
+    margin-top: 70px;
+  }
+  .form-heading{
+    text-align: center;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <form #adminForm="ngForm"  novalidate>
+      <br>
+        <h2 class="form-heading"> Enter Food Details </h2>
+  
+  
+        <div class="row">
+          <div class="col-25">
+            <label >Food Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname"  name="fname" placeholder="Enter Food name" [(ngModel)]="food.fname" >
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="fromdate">Price</label>
+          </div>
+          <div class="col-75">
+            <input type="number" id="fromdate" name="price" placeholder="Enter Price of Food" [(ngModel)]="food.price">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="todate">Discription</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="todate" name="discription" placeholder=" Description...." [(ngModel)]="food.discription">
+            </div>
+          </div>
+        <div class="row row1">
+          <input style="background-color: skyblue;"type="submit" value="Add" (click)="addFood()">
+        </div>
+      </form>
+  </body>
+</html>
+
+

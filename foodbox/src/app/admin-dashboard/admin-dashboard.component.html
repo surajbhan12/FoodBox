@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="jumbotron mt-4 p-5 text-white base rounded">
+      <app-adminnavbar></app-adminnavbar>
+      <br/>
+      <div class="upper">
+          <input type="text" placeholder="Search by Food-Name...." name="fname" [(ngModel)]="fname">
+          <button type="submit" (click)="findByName()">Submit</button>
+    </div>
+        <div class="container my-5">
+          <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <h3>Food Information</h3>
+              <div class="d-flex">
+                <button
+                  type="button"
+                  class="btn btn-primary" 
+                  (click)="addFood()"
+                >
+                  Add Food
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <div class="container my-5">
+          <table class="table base1 m-2 table-hover">
+            <thead style="background-color: aquamarine">
+              <tr>
+                <th>Food Id</th>
+                <th>Food  Name</th>
+                <th>Price</th>
+                <th>Discription</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let v of foods">
+                <td>{{ v.fid }}</td>
+                <td>{{ v.fname }}</td>
+                <td>{{ v.price }}</td>
+                <td>{{ v.discription }}</td>
+                <td>
+                  <button class="btn btn-danger mx-3" (click)="deleteFood(v.fid)" >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</body>
+</html>

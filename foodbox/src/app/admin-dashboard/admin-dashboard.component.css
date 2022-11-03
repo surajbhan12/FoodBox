@@ -1,0 +1,19 @@
+h3{
+    color: blueviolet;
+}
+
+ input{
+    border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: 700px;
+ 
+}
+.upper button {
+    font-size: 17px;
+    border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+    cursor: pointer;
+   background-color: rgb(173, 173, 173);
+}

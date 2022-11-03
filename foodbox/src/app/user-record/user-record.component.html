@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="jumbotron mt-4 p-5 text-white base rounded">
+        <div class="container my-5">
+          <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <h3>Purchesed Items</h3>
+              <div class="d-flex">
+              </div>
+            </div>
+          </nav>
+        </div>
+      
+        <div class="container my-5">
+          <table class="table base1 m-2 table-hover">
+            <thead style="background-color: aquamarine">
+              <tr>
+                <th> Id</th>
+                <th>Food  Name</th>
+                <th>Customer Name</th>
+                <th>Purchesed Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let v of records">
+                <td>{{ v.rid }}</td>
+                <td>{{ v.fname }}</td>
+                <td>{{ v.customer }}</td>
+                <td>{{ v.date }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</body>
+</html>
+
+

@@ -1,0 +1,20 @@
+*{
+    background-color: blueviolet;
+}
+.container{
+    margin-top: 0px;
+}
+ul li a{
+    border-radius:5px;
+	padding:5px 10px;
+	color:white;
+}
+ul li a:hover{
+    background-color:white;
+	transition:.5s;
+	color:black;
+}
+h3{
+    color: burlywood;
+    margin-right: 800px;
+}

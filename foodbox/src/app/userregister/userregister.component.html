@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+  
+        <h2 style="text-align: center;margin-top: 90px;color: rgb(2, 107, 177);"><b>USER REGISTRATION</b></h2>
+        <form #userForm="ngForm" novalidate>
+          <div class="form-group">
+            <label style="margin-top: 10px;" >User name</label>
+            <input type="text" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" name="userName" class="form-control" [(ngModel)]="user.username">
+          </div>
+      
+          <div class="form-group">
+            <label style="margin-top: 10px;">Password</label>
+            <input type="password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched" name="password" class="form-control" [(ngModel)]="user.password">
+          </div>
+          <div class="form-group">
+            <label style="margin-top: 10px;">Email</label>
+            <input type="email"  required #email="ngModel" [class.is-invalid]="email.invalid && email.touched" name="email" class="form-control" [(ngModel)]="user.email">
+          </div>
+          <div class="form-group">
+            <label style="margin-top: 10px;">Mobile Number</label>
+            <input type="text" name="phone" class="form-control" [(ngModel)]="user.phone">
+          </div>
+          
+          <div class="form-group">
+          <button  class="btn btn-primary" type="button " (click)="userRegister()">submit</button>
+        </div>
+      </form>
+      </div>
+</body>
+</html>

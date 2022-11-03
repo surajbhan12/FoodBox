@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container"  *ngIf="!showUser">
+        <br><br>
+        <form action="">
+            <h1 class="h1-responsive font-weight-bold text-center my-4">Admin Login Page</h1>
+            <div align="center">
+            <!-- Email input -->
+              <div class="col-md-4 mb-md-3 mb-lg-4">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Username..." [(ngModel)]="user.username" required/>
+              </div>
+      
+              <!-- Password input -->
+              <div class="col-md-4 mb-md-3 mb-lg-4">
+                <input type="password" id="pwd" name="pwd" class="form-control"  placeholder="Enter your password..." [(ngModel)]="user.password" required/>
+              </div>
+              <div class="col-md-4 mb-md-2 mb">
+              <button type="submit" class="btn btn-primary btn-block mb-4" (click)="loginNow()" >Log in</button>
+              </div>
+              <h6 align="center">{{message}}</h6>
+              <div><br><br><br><br><br><br><br>
+                <h6 align="right">©Copyright..</h6>
+              </div>
+            </div>
+          </form>
+          </div>
+
+<div class="contain"  *ngIf="showUser">
+<app-admin-dashboard></app-admin-dashboard>
+</div>
+<router-outlet></router-outlet>
+</body>
+</html>
+
+
+
+
